@@ -11,7 +11,6 @@ fun main() {
            println("has Room: ${hasRoom()}")
            getRoom()
      }
-   
    val roundHut = RoundHut(1, 10.0)
        with(roundHut){
            println("\nRound Hut\n=========")
@@ -21,7 +20,6 @@ fun main() {
            println("has Room: ${hasRoom()}")
            getRoom()
        }
-  
    val roundTower = RoundTower(7, 15.0, 10)
        with(roundTower){   
            println("\nRound Tower\n=========")
@@ -33,6 +31,7 @@ fun main() {
        }
 }
 
+// Super Class
 abstract class Dwelling(private var residents : Int) { 
     abstract val buildingMaterial : String
     abstract val capacity : Int
@@ -48,6 +47,7 @@ abstract class Dwelling(private var residents : Int) {
     }
     abstract fun floorArea() : Double 
 }
+
 // subclasses
 class SquareCabin(residents : Int, val length : Double) : Dwelling(residents) {
     override val buildingMaterial = "Wood"
