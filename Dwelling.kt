@@ -2,9 +2,9 @@ fun main() {
    val squreCabin = SqaureCabin(10)
        with(squreCabin){
            println("\nSquare Cabin\n=========")
-           println("Capacity: ${squreCabin.capacity}")
-           println("Material: ${squreCabin.buildingMaterial}")
-           println("has Room: ${squreCabin.hasRoom()}")
+           println("Capacity: ${capacity}")
+           println("Material: ${buildingMaterial}")
+           println("has Room: ${hasRoom()}")
      }
    val roundHut = RoundHut(4)
        with(roundHut){
